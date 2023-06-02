@@ -48,9 +48,23 @@
 
 
 //Alert
+// import Alert from "./components/Alert";
+// function App(){
+//   return <div><Alert> hinnd <h1>tessst tag</h1> </Alert>
+
+//         </div>
+// }
+// export default App;
+
+import Button from "./components/Button";
 import Alert from "./components/Alert";
+import {useState} from 'react';
 function App(){
-  return <div><Alert> hinnd <h1>tessst tag</h1> </Alert>
+  useState 
+  const [alertVisible,setAlertVisible]=useState(false);
+  return <div>
+    {alertVisible && <Alert onClose={()=>setAlertVisible(false)}> hinnd <h1>tessst tag</h1> </Alert>}
+    <Button color="secondary" onClick={()=>setAlertVisible(true)}>Save btn </Button>
 
         </div>
 }
