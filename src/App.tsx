@@ -35,13 +35,23 @@
 // import Message from './Message';
 
 //List Group
-import ListGroup from "./components/ListGroup";
-let items=['hind','hiba','zineb']
+// import ListGroup from "./components/ListGroup";
+// let items=['hind','hiba','zineb']
 
+// function App(){
+//   const handleSelectedItem=(item:string)=>{
+//     console.log(item);
+//   }
+//   return <div><ListGroup items={ items}  heading="cities" onSelectItem={handleSelectedItem}/></div>;
+// }
+// export default App;
+
+
+//Alert
+import Alert from "./components/Alert";
 function App(){
-  const handleSelectedItem=(item:string)=>{
-    console.log(item);
-  }
-  return <div><ListGroup items={ items}  heading="cities" onSelectItem={handleSelectedItem}/></div>;
+  return <div><Alert> hinnd <h1>tessst tag</h1> </Alert>
+
+        </div>
 }
 export default App;
